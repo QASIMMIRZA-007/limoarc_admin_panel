@@ -1,0 +1,30 @@
+.summaryWrapper {
+    .summaryWrapp {
+        border: 1px solid #eee;
+        padding: 20px;
+        border-radius: 20px;
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+
+            li {
+                font-size: 16px;
+                color: #000;
+                position: relative;
+                z-index: 2;
+
+            }
+
+        }
+
+        p {
+            font-size: 16px;
+            color: #000;
+            position: relative;
+            z-index: 2;
+
+
+        }
+    }
+}

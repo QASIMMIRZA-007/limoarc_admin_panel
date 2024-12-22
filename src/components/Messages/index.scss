@@ -1,0 +1,14 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.messages-main-container-component {
+  width: 100%;
+  @include flex(row, "", flex-start, 25px);
+  padding: 90px 10px 0px 10px;
+
+  input {
+    background-color: transparent;
+  }
+
+  // padding-left: 60px;
+}

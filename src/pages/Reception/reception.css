@@ -1,0 +1,13 @@
+.receptionTopPadding{
+    padding-top: 40px !important;
+}
+.selectedSlotTime{
+    cursor: pointer !important;
+}
+.modalHeadings{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0D0D0D;
+    margin-bottom: 8px;
+    text-align: center;
+}

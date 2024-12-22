@@ -1,0 +1,11 @@
+.popupmodal-AOC {
+  width: 500px;
+}
+
+.modal {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}

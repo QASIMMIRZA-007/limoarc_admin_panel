@@ -1,0 +1,54 @@
+@media screen and (max-width: 580px) {
+  .responsiveSelectMui {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .responsiveSelectMui .MuiInputBase-root {
+    width: 100% !important;
+  }
+
+  .pagination {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .responsiveLogoBar {
+    flex-direction: row-reverse;
+  }
+
+  .addAndSveBtnDoc {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .col-md-7 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
+
+p {
+  /* margin-bottom:0px !important */
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.pakistan {
+  background: #ff0;
+  height: 100vh;
+  width: 100%;
+}

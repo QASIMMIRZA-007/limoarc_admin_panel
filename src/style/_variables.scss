@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700&display=swap");
+
+// FONTS
+$primaryFont: "Poppins", sans-serif;
+$secondaryFont: "Adamina", serif;
+
+$primaryColor: #0030a6;
+$secondaryColor: white;
+$tertiarycolor: #eb5757;
+
+$primaryBorderColor: #dddddd;
+
+$errorColor: #ff5959;
+$successColor: #02e082;
+$pendingColor: #ffd66b;
+$orangeColor: #ff8f28;
+
+@function opacityColor($color, $alpha) {
+  @return rgba(red($color), green($color), blue($color), $alpha);
+}

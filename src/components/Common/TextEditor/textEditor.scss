@@ -1,0 +1,11 @@
+.react-quil-container {
+  margin-top: 30px;
+  .quill {
+    flex-direction: column;
+    display: flex;
+    border: 1px solid #e0e0e0;
+    .ql-container {
+      height: 40vh;
+    }
+  }
+}

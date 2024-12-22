@@ -1,0 +1,13 @@
+.nav-link-new {
+    font-size: 14.5px;
+    position: relative;
+
+    padding: 1rem 0.5rem;    color: #a1a2ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 13px;
+}
+.nav-link-new:hover{
+    color: #fff;
+}

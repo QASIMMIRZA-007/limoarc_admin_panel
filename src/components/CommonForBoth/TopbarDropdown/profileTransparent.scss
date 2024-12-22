@@ -1,0 +1,40 @@
+.profileWrapper {
+    position: relative;
+    height: 85vh;
+
+
+    .bgWrapp {
+
+
+        .background {
+            // background-image: url('../../assets/projectSvgs/imageBG.jpg');
+            background-image: url('../../../assets/projectSvgs/imageBG.jpg');
+            height: 80vh;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            position: absolute;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            // background-color: rgba(0, 0, 0, 0.24);
+            z-index: -1;
+
+        }
+    }
+}
+
+// .form-control {
+//     background: transparent !important;
+//     color: #fff !important;
+
+
+// }

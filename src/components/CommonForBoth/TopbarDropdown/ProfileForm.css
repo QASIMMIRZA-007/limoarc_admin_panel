@@ -1,0 +1,23 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  .profile-left-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .profile-left {
+    width: 100%;
+    margin-left: 0;
+  }
+  .profile-left-inputs {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .divider-profile {
+    display: none;
+  }
+  .password-container {
+    margin-top: auto;
+  }
+  .passwords-button {
+    margin-bottom: 0;
+  }
+}

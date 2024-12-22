@@ -1,0 +1,170 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.group-settings-modal-container {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  .side-by-side-inputs {
+    @include flex(row, space-between, center, 25px);
+    @include phoneOnly {
+      flex-direction: column-reverse;
+    }
+  }
+  .inputs-main-container {
+    width: 600%;
+  }
+  .inputs-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    // flex-direction: column;
+    width: 100%;
+    input {
+      width: 100%;
+      border: 2px solid $primaryBorderColor;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+    }
+    button {
+      width: 40%;
+      background-color: $primaryColor;
+      color: white;
+      padding: 5px 7px;
+      border-radius: 10px;
+      // font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      label {
+        margin: 0;
+        cursor: pointer;
+      }
+    }
+    .search-input {
+      text-align: left;
+      height: 35px;
+      border: 1px solid $primaryBorderColor;
+    }
+  }
+  .group-profile-icon {
+    padding-inline: 20px;
+    position: relative;
+    margin-bottom: 20px;
+
+    img {
+      margin-inline: auto;
+      width: 125px;
+      height: 125px;
+      max-width: 125px;
+      min-width: 125px;
+      max-height: 125px;
+      border-radius: 50%;
+      border: 1px solid $primaryBorderColor;
+      object-fit: cover;
+    }
+    .upload-button {
+      position: absolute;
+      bottom: -15px;
+      left: 144px;
+      background-color: $primaryColor;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      label {
+        margin: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  img {
+    object-fit: cover;
+  }
+  .group-members-main-container {
+    h6 {
+      margin-bottom: 8px;
+    }
+    .group-members-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      max-height: calc(100vh - 300px);
+      overflow-y: auto;
+      padding-right: 8px;
+      // max-height: 70px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 2px;
+      }
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+      .group-member-container {
+        border: 1px solid $primaryBorderColor;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        button {
+          padding-inline: 10px;
+          font-weight: 600;
+        }
+        .add-button {
+          color: $primaryColor;
+        }
+        .remove-button {
+          color: $errorColor;
+        }
+
+        .single-inner-left {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+          h5 {
+            margin: 0;
+          }
+          p {
+            font-size: 14px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .save-group-button {
+    padding: 10px 20px;
+    background-color: $primaryColor;
+    border-radius: 10px;
+    color: white;
+  }
+  .delete-group-button {
+    padding: 10px 20px;
+    background-color: $errorColor;
+    border-radius: 10px;
+    color: white;
+  }
+  .chat-setting-actions {
+    @include flex(row, flex-end, center, 20px);
+    margin-bottom: 10px;
+  }
+}

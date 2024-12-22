@@ -1,0 +1,26 @@
+.mainFaQ{
+    background-color: #fff;
+    padding-left: 16px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.FAQquestion{
+    color: #0D0D0D;
+    font-size: 16px;
+    font-weight: 700;
+   
+}
+.FAQAnswer {
+    
+    font-size: 14px;}
+    .modalHeadings{
+        font-size: 24px;
+        font-weight: 700;
+        color: #0D0D0D;
+        margin-top: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    

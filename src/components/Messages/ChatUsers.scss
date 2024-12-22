@@ -1,0 +1,183 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+.all-chat-users-main-container {
+  width: 26%;
+  min-width: 26%;
+  @include phoneOnly {
+    width: 100%;
+    min-width: 100%;
+  }
+  .no-chat-users-found {
+    display: flex;
+    justify-content: center;
+    h3 {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .chat-users-search-filter-container {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include desktopUp {
+      padding-right: 12px;
+    }
+
+    .search-input-container {
+      height: 40px;
+      @include flex(row, flex-start, center, 10px);
+      border: 2px solid $primaryBorderColor;
+      border-radius: 10px;
+      padding-inline: 7px;
+
+      &:focus-within {
+        border: 2px solid $primaryColor;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-family: $primaryFont;
+      }
+    }
+  }
+  .add-conversation-container {
+    @include flex(row, space-between, center);
+    h5 {
+    }
+    .add-conversation-button {
+      height: 25px;
+      width: 25px;
+      border: 2px solid #53646d;
+      border-radius: 50%;
+      @include flex(row, center, center);
+      font-weight: 600;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+  .chat-users-container {
+    margin-top: 10px;
+    width: 100%;
+    @include flex(column, "", center, 10px);
+    height: calc(100vh - 270px);
+    max-height: calc(100vh - 270px);
+    overflow-y: auto;
+
+    @include desktopUp {
+      padding-right: 7px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 10px;
+      }
+    }
+    .single-chat-user-container {
+      width: 100%;
+      border-radius: 15px;
+      border: 2px solid $primaryBorderColor;
+      @include flex(row, space-between, center, 20px);
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: opacityColor($primaryColor, 0.1);
+      }
+      .single-chat-user-left {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        img {
+          width: 60px;
+          height: 60px;
+          min-width: 60px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .chat-user-online-status-circle {
+          height: 14px;
+          width: 14px;
+          background-color: rgb(186, 186, 186);
+          border: 2px solid white;
+          position: absolute;
+          bottom: 3px;
+          right: 3px;
+          border-radius: 50%;
+        }
+        .online-status-true {
+          background-color: $successColor;
+        }
+      }
+      .single-chat-user-right {
+        width: calc(100% - 75px);
+        h4 {
+          color: $primaryColor;
+          font-size: 15px;
+          font-family: $secondaryFont;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+        h5 {
+          // padding-top: 5px;
+          font-size: 16px;
+          font-weight: 600;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+        .side-by-side-elements {
+          width: 100%;
+          @include flex(row, space-between, center);
+          // margin-top: 5px;
+          .last-message-container {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            .last-message-text-span {
+              width: 100%;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+              font-family: $secondaryFont;
+              color: opacityColor(black, 0.5);
+              font-size: 10px;
+              height: 13px;
+            }
+          }
+
+          span {
+            color: rgb(115, 115, 115);
+            font-size: 12px;
+            i {
+              font-size: 12px;
+            }
+          }
+
+          .unread-status {
+            font-weight: 600;
+            color: $orangeColor;
+          }
+        }
+      }
+    }
+    .single-chat-user-active {
+      background-color: opacityColor($primaryColor, 0.1);
+      border: 2px solid $primaryColor;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

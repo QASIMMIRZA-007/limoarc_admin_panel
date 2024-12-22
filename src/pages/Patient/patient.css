@@ -1,0 +1,48 @@
+
+.AOC-show-entri-main{
+    display: flex;
+    /* width: 100%; */
+    /* flex-direction: row; */
+}
+
+.AOC-entrimain{
+    width: 70%;
+    display: flex;
+    grid-gap: 5px;
+    float: left;
+}
+.AOC-show-entri-main p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #5B626B;
+}
+.AOC-box{
+    border: 1px solid #CED4DA;
+    font-size: 13px;
+    font-weight: 400;
+    color: #0D0D0D;
+    padding : 5px 16px 4px 9px;
+}
+.AOC-search-bar{
+    display: contents;
+    /* width: 50%;
+    display: block;
+    float: right; */
+}
+
+.AOC-search-bar input{
+    border-top-style: outset;
+    border-left-style: outset
+}
+.select-main-dropdown{
+    width: 16%;
+    margin-left: 5px;
+}
+.co-name-lastrow{
+    font-size: 10px;
+    font-weight: 700;
+    color: #828282;
+}
+.card-foo p{
+    color: #828282;
+}

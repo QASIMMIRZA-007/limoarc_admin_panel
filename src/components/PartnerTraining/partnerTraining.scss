@@ -1,0 +1,24 @@
+.partnerTrainingWrapper {
+    .partnerTrainingWrapp {
+
+        border: 1px solid #eee;
+        padding: 20px;
+        border-radius: 10px;
+        // background: ;
+
+        p {
+            color: #000;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .btnsWrapp {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: end;
+        }
+    }
+}

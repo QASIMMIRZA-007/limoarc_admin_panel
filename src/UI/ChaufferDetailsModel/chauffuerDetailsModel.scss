@@ -1,0 +1,112 @@
+.userDetailsWrapp {
+    margin-top: 100px;
+
+
+    .userDetails {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        span {
+            // color: #a18552;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+
+        }
+    }
+
+    form {
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // align-items: start;
+        // flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.chaufferDetailsModalWrapper {
+    .chaufferDetailsModalWrapp {
+        .chaufferDetailsWrapp {
+            .MDBDataTable_wrapp {
+                border: 1px solid #D2D2D2;
+                border-radius: 10px;
+                padding: 15px;
+                margin-top: 20px;
+
+                h2 {
+                    color: #a18552;
+                    font-size: 22px;
+                    border-bottom: 1px solid #D2D2D2;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .ant-tabs {
+                margin-top: 20px;
+
+                .ant-tabs-tab-btn {
+                    // font-family: $poppin;
+                    font-family: "Manrope", sans-serif;
+                }
+.ant-tabs-tab:hover {
+    color: #a18552;
+}
+
+.ant-tabs-ink-bar {
+    background: #a18552;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+    text-shadow: none;
+    color: #a18552;
+    font-weight: 600;
+}
+
+.ant-tabs-top .ant-tabs-nav::before {
+    border-bottom: none !important;
+                }
+                }
+        }
+    }
+}
+.car_details_wrapp {
+    margin-top: 20px;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    padding: 15px;
+
+    .car_details {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .car_detail {
+            margin-bottom: 10px;
+
+            h5 {
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .car_documents_flex {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

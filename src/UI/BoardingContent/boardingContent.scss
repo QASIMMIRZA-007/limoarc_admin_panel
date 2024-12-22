@@ -1,0 +1,67 @@
+.contentWrapp {
+
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 10px;
+
+
+
+    .inputsWrapp {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .radioBtns {
+        position: relative;
+        z-index: 2;
+        color: #000;
+        margin-bottom: 20px;
+
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .radiaGroups {
+            color: #000;
+            display: flex;
+            gap: 10px;
+
+            input {
+                background: #000 !important;
+            }
+
+            span {
+                color: #000;
+            }
+        }
+
+
+    }
+
+    .textsWrapp {
+        color: #000;
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 15px;
+            }
+
+            // color: red;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+    }
+}

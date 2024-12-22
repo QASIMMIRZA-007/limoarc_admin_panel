@@ -1,0 +1,50 @@
+.NoneType {
+    font-family: 'poppins';
+    font-weight: 700;
+    color: #a18552;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.missedType {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #EB5757;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+.underreviewType {
+    color: #f2f24a;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+.upcomingType {
+    color: #F2994A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+.completedType {
+    color: #219653;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* Horizontal centering */
+
+}

@@ -1,0 +1,87 @@
+.customInput {
+    position: relative;
+    width: 100%;
+
+    .span {
+        color: #000;
+        background: #fff;
+
+        position: absolute;
+        left: 30px;
+        top: -10px;
+        padding: 0 6px;
+        font-size: 12px;
+        font-weight: 500;
+
+        var {
+            color: red;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
+
+    }
+
+    .customInputWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 10px;
+        height: 55px;
+        border-radius: 12px;
+        border: 1px solid #ABABAB;
+        background-color: transparent;
+        margin-bottom: 15px;
+        height: 55px;
+
+
+
+
+
+        svg {
+            display: block;
+            color: #000;
+            font-size: 19px;
+            cursor: pointer;
+        }
+
+        .customInputWrapp {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background: none;
+
+            input {
+                // background-color: transparent !important;
+                background: none !important;
+                outline: none;
+                box-shadow: none;
+                height: 100%;
+                width: 100%;
+                border: none;
+                color: #000;
+                font-size: 14px;
+                font-weight: 400;
+                // font-family: $manRope;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 10px;
+                }
+
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    width: 100%;
+
+                }
+
+                &:focus {
+                    background: none;
+                }
+
+
+            }
+        }
+    }
+}

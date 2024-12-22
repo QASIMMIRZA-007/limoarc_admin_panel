@@ -1,0 +1,319 @@
+@import "../../../style/variables";
+@import "../../../style//mixins";
+
+.chat-box-main-container-patient-messages {
+  width: calc(74% - 25px);
+  position: relative;
+  @include phoneOnly {
+    width: 100%;
+    min-width: 100%;
+  }
+  .messages-box-header {
+    padding-right: 10px;
+    @include flex(row, space-between, center);
+    h3 {
+      padding-block: 13.2px;
+    }
+    .messages-box-header-left {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      img {
+        cursor: pointer;
+      }
+    }
+    .consultation-button {
+      background-color: $primaryColor;
+      font-size: 13px;
+      font-weight: 500;
+      height: 40px;
+      padding-inline: 15px;
+      border-radius: 7px;
+      color: white;
+      font-family: $secondaryFont;
+      @include flex(row, center, center, 6px);
+    }
+    .selected-single-chat-user-container {
+      width: 80%;
+      border-radius: 15px;
+      @include flex(row, space-between, center, 20px);
+      .single-chat-user-left {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        img {
+          width: 60px;
+          height: 60px;
+          min-width: 60px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .chat-user-online-status-circle {
+          height: 14px;
+          width: 14px;
+          background-color: rgb(186, 186, 186);
+          border: 2px solid white;
+          position: absolute;
+          bottom: 3px;
+          right: 3px;
+          border-radius: 50%;
+        }
+        .online-status-true {
+          background-color: $successColor;
+        }
+      }
+      .single-chat-user-right {
+        width: calc(100% - 60px);
+        @include flex(row, flex-start, center, 20px);
+        a {
+          padding-top: 5px;
+          @include flex(row, flex-start, center, 5px);
+
+          &:hover {
+            svg {
+              path {
+                fill: $primaryColor;
+              }
+            }
+            h4 {
+              color: $primaryColor;
+            }
+          }
+          svg {
+            path {
+              fill: black;
+            }
+          }
+        }
+        h4 {
+          font-size: 15px;
+          font-family: $secondaryFont;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+          color: $primaryColor;
+        }
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+        .more-actions-button {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    hr {
+      width: 100%;
+      border: 2px solid $primaryBorderColor;
+    }
+    .search-input-container {
+      width: 300px;
+      height: 40px;
+      @include flex(row, flex-start, center, 10px);
+      border: 2px solid $primaryBorderColor;
+      border-radius: 10px;
+      padding-inline: 7px;
+      &:focus-within {
+        border: 2px solid $primaryColor;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-family: $primaryFont;
+        background: transparent;
+      }
+    }
+  }
+  hr {
+    margin-block: 10px;
+  }
+  .no-chat-message {
+    @include flex(row, center, center);
+    height: calc(100vh - 260px);
+    max-height: calc(100vh - 260px);
+    p {
+      background-color: $errorColor;
+      padding: 5px 10px;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+  .chat-box-messages {
+    @include flex(column, flex-start, flex-start, 8px);
+    height: calc(100vh - 315px);
+    max-height: calc(100vh - 315px);
+    overflow-y: auto;
+    padding-right: 7px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $primaryColor;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+
+    .no-messages-text {
+      width: 100%;
+      @include flex(row, center, center);
+      p {
+        background-color: rgb(224, 224, 224);
+        color: rgb(71, 71, 71);
+        border-radius: 10px;
+        padding: 2px 20px;
+      }
+    }
+
+    .messages-date-divider {
+      width: 100%;
+      text-align: center;
+      margin-block: 5px;
+      color: $primaryColor;
+      font-family: $secondaryFont;
+      text-decoration: underline;
+    }
+    .single-message-item {
+      width: 100%;
+      @include flex(row, flex-start, flex-end, 6px);
+      .message-profile-image {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .single-message-text-box {
+        max-width: 50%;
+        padding: 5px 8px;
+        border-radius: 8px;
+        border: 1px solid $primaryBorderColor;
+        @include flex(column, "", flex-start, 2px);
+        @include phoneOnly {
+          max-width: 70%;
+        }
+        .message-image {
+          width: 100%;
+          max-height: 300px;
+          object-fit: cover;
+          border-radius: 8px;
+          padding-block: 3px;
+        }
+        p {
+          width: 100%;
+          overflow-wrap: break-word;
+          font-family: $secondaryFont;
+        }
+        h6 {
+          font-size: 13px;
+          color: $primaryColor;
+          font-weight: 600;
+        }
+        span {
+          font-size: 11px;
+          margin-left: auto;
+          color: rgb(178, 178, 178);
+        }
+        i {
+          margin-left: 5px;
+          text-transform: capitalize;
+        }
+        .delivered {
+          color: $pendingColor;
+        }
+        .seen {
+          color: $successColor;
+        }
+        .message-as-link {
+          color: rgb(1, 210, 252);
+        }
+      }
+    }
+    .sender-message-item {
+      @include flex(row-reverse, "", flex-end, 6px);
+      .single-message-text-box {
+        border-color: $primaryColor;
+        background-color: $primaryColor;
+        p {
+          color: white;
+        }
+        span {
+          color: rgb(214, 214, 214);
+        }
+      }
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+  .chat-box-messages-sending-container {
+    margin-top: 20px;
+    width: 100%;
+    @include flex(row, space-between, center, 10px);
+    button {
+      background-color: $primaryColor;
+      font-size: 13px;
+      font-weight: 500;
+      height: 40px;
+      width: 90px;
+      border-radius: 7px;
+      color: white;
+      font-family: $secondaryFont;
+      @include flex(row, center, center, 6px);
+    }
+    .messages-inputs-container {
+      width: calc(100% - 90px);
+      position: relative;
+      input {
+        width: 100%;
+        border: 2px solid $primaryBorderColor;
+        height: 40px;
+        border-radius: 7px;
+        padding-inline: 7px;
+        padding-right: 60px;
+        outline-color: $primaryColor;
+        font-family: $primaryFont;
+      }
+      .file-icon {
+        position: absolute;
+        right: 13px;
+        top: 11px;
+        cursor: pointer;
+      }
+      .file-name {
+        background-color: $secondaryColor;
+        height: 40px;
+        color: $primaryColor;
+        padding: 0 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 60px;
+        border: 2px solid $primaryBorderColor;
+        span {
+          max-width: 60vw;
+          overflow: hidden;
+          overflow-wrap: break-word;
+          text-overflow: ellipsis;
+        }
+        .cross-file-name {
+          cursor: pointer;
+          font-size: 16px;
+          color: $errorColor;
+        }
+      }
+    }
+  }
+}

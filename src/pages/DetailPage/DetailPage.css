@@ -1,0 +1,1019 @@
+.details-container {
+  width: 96%;
+  height: 10%;
+  margin-left: 27px;
+  margin-top: 80px;
+}
+.description-section {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.MuiStepLabel-iconContainer .Mui-completed {
+  color: rgb(2, 207, 2) !important;
+}
+.prscribHeading {
+  font-family: "Poppins" !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  color: #959393;
+}
+.mainPrescrib {
+  display: flex;
+  justify-content: space-between;
+}
+.leftSidePrescription {
+  width: 45%;
+}
+.prescribRightInstr {
+  width: 45%;
+}
+.prscribData {
+  font-family: "Montserrat" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #555252;
+  margin-top: 3px;
+}
+.firstSectionWidth {
+  width: 21%;
+}
+.secondSectionWidth {
+  width: 70%;
+  margin-left: 20px;
+}
+.prescribTimes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.prescribContent {
+  display: flex;
+  width: 100%;
+}
+.request-button {
+  width: 150px;
+  height: 30px;
+  background: #a18552;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.request-button > p {
+  padding: 8px;
+  font-size: 12px;
+}
+.disable-request-button {
+  width: 150px;
+  height: 30px;
+  background: #a18552;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.disabled-request-button > p {
+  padding: 8px;
+  font-size: 12px;
+}
+.nodatayet {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.medicine-list h4 {
+  font-family: "Adamina" !important;
+}
+.medicine-list h1 {
+  font-family: "Montserrat" !important;
+}
+
+.desc-leftside-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #e5eaf6;
+  padding: 6px 12px;
+  border-radius: 18px;
+  margin-left: 0.5%;
+  margin-top: 8px;
+}
+.desc-leftside-sec > h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 21px;
+  color: #a18552;
+  margin-bottom: 0px;
+}
+.desc-leftside-sec > h5 > small {
+  color: #828282;
+}
+.desc-leftside-sec > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0d0d0d;
+}
+.desc-rightside-sec {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-top: -5%;
+}
+.message-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.condition-sec {
+  width: auto;
+  height: 30px;
+  background: #e5eaf6;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  margin-top: 4.5%;
+  margin-left: 10px;
+}
+.vediocall-button-sec {
+  width: 150px;
+  height: 30px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.condition-sec > h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #0b32a3;
+  margin-left: 6px;
+  margin-bottom: 0px;
+  /* padding: 6px 12px; */
+}
+.message-sec > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a18552;
+}
+.bottomNav-list > ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.bottom-sectionss {
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.tabs-section-menu {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+}
+.tabs-section-menu > p {
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.activeTab {
+  color: #0b32a3;
+  border-bottom: 2px solid #0b32a3;
+  /* font-size: 14px; */
+  font-weight: 500;
+}
+.btnAddPrescription :where(.css-dev-only-do-not-override-1s3dcof).ant-btn {
+  padding: 4px 8px !important;
+  /* margin-right: 50px; */
+}
+
+.lower-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 20px 32px;
+
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.lower-booking-sectionss {
+  width: 100%;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.bottom-card-section {
+  width: 96%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 65px rgb(0 0 0 / 5%), 0px 0px 38.0671px rgb(0 0 0 / 4%),
+    0px 0px 20.7037px rgb(0 0 0 / 3%), 0px 0px 10.5625px rgb(0 0 0 / 3%),
+    0px 0px 5.2963px rgb(0 0 0 / 2%), 0px 0px 2.55787px rgb(0 0 0 / 1%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* padding-bottom: 30px; */
+}
+.review-card {
+  width: 96%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 65px rgb(0 0 0 / 5%), 0px 0px 38.0671px rgb(0 0 0 / 4%),
+    0px 0px 20.7037px rgb(0 0 0 / 3%), 0px 0px 10.5625px rgb(0 0 0 / 3%),
+    0px 0px 5.2963px rgb(0 0 0 / 2%), 0px 0px 2.55787px rgb(0 0 0 / 1%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.notes-card {
+  width: 96%;
+  height: 250px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 65px rgb(0 0 0 / 5%), 0px 0px 38.0671px rgb(0 0 0 / 4%),
+    0px 0px 20.7037px rgb(0 0 0 / 3%), 0px 0px 10.5625px rgb(0 0 0 / 3%),
+    0px 0px 5.2963px rgb(0 0 0 / 2%), 0px 0px 2.55787px rgb(0 0 0 / 1%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.bottom-review-card {
+  width: 90%;
+  height: 100px;
+  background: rgb(228, 227, 227);
+  border-radius: 10px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.headings {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #a6a6a6;
+  padding: 30px;
+}
+.Right-side-content {
+  margin-top: 90px;
+  margin-right: 100px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* justify-content: center;
+  align-items: center; */
+}
+.accepted {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  /* #a18552 */
+
+  color: #a18552;
+}
+.diseases {
+  font-size: 12px;
+  color: #0d0d0d;
+}
+.CollapsMed {
+  width: 900px;
+  /* height: 54px; */
+  max-height: 360px;
+  overflow: auto;
+  background: #f2f2f2;
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 10px 0px;
+  /* border-color: #828282; */
+  border-radius: 18px;
+  padding-left: 4.5%;
+  padding-right: 3.5%;
+}
+.CollapsMed p {
+  /* color: #828282; */
+  font-size: 14px;
+  font-weight: 600;
+}
+.pending {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  /* #a18552 */
+
+  color: #828282;
+}
+.stepper-desc {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  /* or 162% */
+
+  text-align: justify;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+.booking-card {
+  width: 96%;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.05),
+    0px 0px 38.0671px rgba(0, 0, 0, 0.037963),
+    0px 0px 20.7037px rgba(0, 0, 0, 0.0303704),
+    0px 0px 10.5625px rgba(0, 0, 0, 0.025),
+    0px 0px 5.2963px rgba(0, 0, 0, 0.0196296),
+    0px 0px 2.55787px rgba(0, 0, 0, 0.012037);
+  border-radius: 10px;
+}
+.booking-nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* width: 50%; */
+  margin-left: 29px;
+}
+.booking-nav-content {
+  background: #f2f2f2;
+  height: 35px;
+  /* border: 1px solid #828282; */
+  border-radius: 23px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: #555252;
+}
+.booking-nav-content-active {
+  background: #0b32a3;
+  color: #ffffff;
+  height: 35px;
+  /* border: 1px solid #828282; */
+  border-radius: 23px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+.booking-nav-content-active > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: white;
+}
+.booking-nav-content > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+  margin: 0;
+}
+.active-booking-nav-headings {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  background-color: #0d0d0d;
+
+  /* #FFFFFF */
+
+  color: white;
+}
+.profile-image-user {
+  width: 123px;
+  height: 123px;
+  border-radius: 10px;
+}
+.videoDiv {
+  display: none;
+}
+/* .image-cont{
+   
+} */
+.personal-info {
+  display: flex;
+  margin-left: 29px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  /* height: 350px; */
+  gap: 25px;
+}
+.questionss {
+  width: 120px;
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #828282;
+}
+.answer {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 21px;
+  color: #0d0d0d;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+.prescription-second-cont {
+  width: 176px;
+  height: 37px;
+  float: right;
+  margin-top: -4%;
+  margin-right: 5%;
+}
+.prescriptionDetails-cont {
+  /* display: flex; */
+  padding: 10px;
+  /* justify-content: space-between; */
+}
+.prep-left-side-cont {
+  width: 311px;
+  height: 122px;
+  background: rgba(237, 242, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prep-left-side-contt {
+  padding-left: 20px;
+}
+.prep-left-side-cont > svg {
+  padding-right: 20px;
+}
+.prep-left-side-contt > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+.prep-left-side-contt > h5 {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+}
+.prep-left-side-contt > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: #a18552;
+}
+.download-sec {
+  width: 150px;
+  height: 82px;
+  background: rgba(237, 242, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.download-secc {
+  width: 110px;
+  height: 122px;
+  background: rgba(237, 242, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.download-prep {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+}
+.download-secc {
+  width: 80px;
+  height: 80px;
+  background: rgba(237, 242, 255, 0.6);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.med-middle-sec {
+  /* display: flex; */
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.med-headings {
+  margin-left: 10px;
+}
+.med-headings > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #0d0d0d;
+}
+.med-headings > ul > li {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  /* identical to box height, or 175% */
+
+  /* #0D0D0D */
+
+  color: #0d0d0d;
+}
+.med-headings > p {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #0d0d0d;
+}
+.medications-list > p {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #0d0d0d;
+}
+.medications-list {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.Review_button {
+  margin-top: 28%;
+}
+@media screen and (max-width: 1200px) {
+  .CollapsMed {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .prescriptionDetails-cont {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .bottom-card-section {
+    column-gap: 40px;
+  }
+  .Right-side-content {
+    margin-top: 10%;
+    line-height: 18px;
+  }
+
+  .pending {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .booking-nav-bar {
+    width: auto;
+  }
+  .prescription-second-cont {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 43px;
+  }
+  .accepted {
+    margin-top: 9%;
+  }
+  .pending {
+    margin-top: 23%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .prescriptionDetails-cont {
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .Review_button {
+    margin-top: 54%;
+  }
+  .accepted {
+    /* margin: auto; */
+    margin-top: 14%;
+    font-size: 13px;
+  }
+  .pending {
+    /* margin: auto; */
+    margin-top: 52%;
+    font-size: 13px;
+  }
+
+  .request-button > p {
+    font-size: 9px;
+    font-weight: 500;
+  }
+  .stepper-desc {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .details-container {
+    width: 100%;
+    height: 10%;
+    margin-left: 18px;
+    margin-top: 17%;
+  }
+  .mainPrescrib {
+    flex-direction: column;
+  }
+  .leftSidePrescription {
+    width: 100%;
+  }
+  .prescribRightInstr {
+    width: 100%;
+  }
+
+  .disable-request-button {
+    width: 100px;
+    height: 30px;
+    background: #a18552;
+    font-weight: 600;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  .disabled-request-button > p {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .description-section {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 2%;
+  }
+  .desc-leftside-sec {
+    padding: 7px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .desc-leftside-sec > h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a18552;
+  }
+  .desc-leftside-sec > h5 > small {
+    color: #828282;
+  }
+  .lower-section {
+    background-color: rgba(242, 242, 242, 1);
+
+    position: relative;
+  }
+  .lower-booking-sectionss {
+    background-color: rgba(242, 242, 242, 1);
+
+    position: relative;
+  }
+
+  .desc-rightside-sec {
+    display: inline-flex;
+    margin-top: 3.5%;
+  }
+
+  .steppers-container {
+    width: 95%;
+  }
+  .Right-side-content {
+    margin-top: 90px;
+    margin-right: 0px;
+    width: 40%;
+    display: flex;
+  }
+  .accepted {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    /* #a18552 */
+
+    color: #a18552;
+  }
+  .pending {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #828282;
+  }
+  .stepper-desc {
+    font-family: "Adamina";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 16px;
+    color: #828282;
+  }
+
+  .booking-nav-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 100%;
+    margin: 0px auto;
+    margin-left: 2%;
+  }
+  .booking-nav-content {
+    background: #ffffff;
+    height: 25px;
+    border: 1px solid #828282;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  .personal-info {
+    /* display: -webkit-inline-box; */
+
+    /* margin-left: 10px; */
+  }
+
+  .profile-image-user {
+    width: 123px;
+    height: 123px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .marginTop {
+    margin-top: 20px;
+  }
+  .btnAddPrescription {
+    padding-left: 0 !important;
+  }
+  .btnAddPrescription :where(.css-dev-only-do-not-override-1s3dcof).ant-btn {
+    padding: 4px 3px !important;
+    /* margin-right: 50px; */
+  }
+  .prescriptionDetails-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 10px;
+  }
+  .medications-list {
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .personal-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .firstSectionWidth {
+    width: 25%;
+  }
+  .booking-card {
+    height: auto;
+  }
+  .lower-booking-sectionss {
+    width: 100%;
+  }
+  .secondSectionWidth {
+    margin-left: 10px;
+    width: 65%;
+  }
+  .image-cont {
+    width: 100%;
+  }
+  img.profile-image-user {
+    width: 60px;
+    height: 60px;
+  }
+  .name-sec {
+    width: 96%;
+    display: inline-block;
+  }
+  .questionss {
+    width: 100px;
+  }
+
+  .CollapsMed {
+    width: 100%;
+  }
+  .med-headings {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .med-headings > p {
+    width: 100%;
+    margin: 0px auto;
+    text-align: justify;
+  }
+  /* .answer {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 12px;
+} */
+}
+
+@media screen and (max-width: 540px) {
+  .description-section {
+    /* flex-direction: column; */
+  }
+
+  .CollapsMed {
+    width: 100%;
+  }
+  .request-button {
+    margin-top: 30%;
+  }
+}
+@media screen and (max-width: 452px) {
+  .tabs-section-menu {
+    width: 100%;
+    padding: 0px;
+    /* flex-direction: column; */
+    display: table-cell;
+  }
+  .desc-rightside-sec {
+    margin-top: 4%;
+    width: 80px;
+  }
+  .accepted:nth-child(2) {
+    margin-top: 90px !important;
+  }
+  .disable-request-button {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .accepted {
+    margin-top: 6% !important;
+  }
+  .videoDiv {
+    display: block;
+    margin-top: 130px;
+  }
+  .responsiveVidBtn {
+    margin-top: 130px;
+  }
+  .pending {
+    margin-top: 90px;
+  }
+  .Review_button {
+    margin-top: 90px;
+  }
+  .request-button {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .accepted {
+    margin-top: 10% !important;
+  }
+  .videoDiv {
+    display: block;
+    margin-top: 140px;
+  }
+  .responsiveVidBtn {
+    margin-top: 140px;
+  }
+  .accepted:nth-child(2) {
+    margin-top: 110px !important;
+  }
+  .pending {
+    margin-top: 110px;
+  }
+  .Review_button {
+    margin-top: 90px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .videoDiv {
+    display: block;
+    margin-top: 160px;
+  }
+  .responsiveVidBtn {
+    margin-top: 160px;
+  }
+  .pending {
+    margin-top: 150px;
+  }
+  .Review_button {
+    margin-top: 120px;
+  }
+  .accepted:nth-child(2) {
+    margin-top: 150px !important;
+  }
+}

@@ -1,0 +1,29 @@
+.MuiSelect-selectMenu {
+
+    min-height: 2.1876em !important;
+    margin: 20px 0;
+}
+
+.modalHeadings {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0D0D0D;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ArchivedCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+}
+
+.mainCard {
+    border: 1px solid #E0E0E0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

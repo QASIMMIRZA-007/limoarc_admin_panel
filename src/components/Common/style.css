@@ -1,0 +1,23 @@
+.selectedSlotTime {
+  border-radius: 16px;
+  padding: 8px;
+  width: 165px;
+  background-color: #002faa;
+  color: white;
+  display: inline-table;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.modalHeadings {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+body .pac-container {
+  z-index: 234323456 !important;
+}

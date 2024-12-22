@@ -1,0 +1,170 @@
+.mainLoginWrapper {
+  position: relative;
+}
+
+.bgWrapp {
+  .background {
+    background-image: url('../../assets/projectSvgs/imageBG.jpg');
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+  }
+}
+
+.login-heading {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+
+.login-paragraph {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #686868;
+  margin-top: 10px;
+}
+
+.login-inputs {
+  /* width: 363px; */
+  height: 45px;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  width: 363px;
+  height: 45px;
+  background: #a18552 !important;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.signup-btn {
+  /* width: 120px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 45px;
+  background: #a18552 !important;
+  border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.line-hei {
+  line-height: 2px !important;
+}
+
+.guest-btn {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a18552;
+  margin-top: 30px;
+  height: 45px;
+}
+
+.second-btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #a4d0db;
+  height: 41px;
+  cursor: pointer;
+  padding-top: 20px;
+  text-decoration: none !important;
+}
+
+.second-btn p {
+  text-decoration: none !important;
+}
+
+.back-color {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  } */
+
+.forget {
+  /* font-family: "Adamina"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: end;
+  color: #a18552;
+}
+
+.remember-me {
+  font-family: "Adamina" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #0d0d0d;
+  margin-left: 10px;
+}
+
+.signup {
+  font-family: "Adamina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #686868;
+}
+
+.signup a {
+  color: #a18552 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .back {
+    /* background-image: url("../../assets/Images/AmericanClinic\ Online.svg"); */
+    background-repeat: no-repeat;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}

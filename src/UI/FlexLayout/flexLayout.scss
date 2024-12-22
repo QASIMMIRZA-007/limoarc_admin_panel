@@ -1,0 +1,16 @@
+.flexLayoutWrapp {
+    .flexLayout {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width:769px) and (max-width:992px) {
+            flex-direction: column;
+        }
+    }
+}

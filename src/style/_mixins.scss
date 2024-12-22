@@ -1,0 +1,38 @@
+@mixin flex($direction: row, $justify: "", $align: stretch, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  @if $justify != "" {
+    justify-content: $justify;
+  }
+  @if $align != "" {
+    align-items: $align;
+  }
+  @if $align == "" {
+    align-items: stretch;
+  }
+  gap: $gap;
+}
+
+@mixin phoneOnly {
+  @media (max-width: 760px) {
+    @content;
+  }
+}
+
+@mixin tabletLandscapeUp {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin desktopUp {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin bigDesktopUp {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

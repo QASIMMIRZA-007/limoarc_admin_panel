@@ -1,0 +1,92 @@
+.tableWrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+
+
+    .trainingTable {
+        width: 96%;
+        border-collapse: collapse;
+        border: 1px solid #eee;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width:769px) and (max-width:992px) {
+            width: 100%;
+
+        }
+
+        // overflow: hidden;
+
+
+        thead {
+            background-color: #a18552;
+            color: #000;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+
+
+
+
+            th {
+                padding: 12px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: left;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    width: 100%;
+
+                }
+
+
+
+            }
+        }
+
+        tbody {
+
+            tr {
+                border-bottom: 1px solid #444;
+                border: 1px solid #fff;
+                position: relative;
+                z-index: 2;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                td {
+                    padding: 10px;
+                    color: #000;
+                    font-size: 0.9rem;
+                    position: relative;
+                    z-index: 2;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.row-name {
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
+}

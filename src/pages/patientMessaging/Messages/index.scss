@@ -1,0 +1,19 @@
+@import "../../../style/variables";
+@import "../../../style//mixins";
+
+.messages-main-container-component-patient-messages {
+  width: 100%;
+  @include flex(row, "", flex-start, 25px);
+  padding: 90px 10px 0px 10px;
+  // padding-left: 60px;
+  height: calc(100vh - 80px);
+
+  .no-messages-in-chat-container {
+    width: 100%;
+    @include flex(column, center, center);
+    height: 100%;
+    & > div {
+      @include flex(column, center, center);
+    }
+  }
+}
