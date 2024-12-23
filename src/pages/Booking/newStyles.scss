@@ -1,0 +1,22 @@
+.assign-chauffeur-btn {
+    background-color: #f2994a;
+    background-color: rgba(210, 192, 145, 0.24);
+    border-radius: 43px;   
+    border: none;
+    color: white;
+    padding: 7px 15px ;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    color: #a18552;
+  }
+  
+  .assign-chauffeur-btn:hover {
+    background-color: #a18552;
+    color: #fff;
+  }
+  
+  .assign-chauffeur-btn:focus {
+    outline: none;
+  }
+  

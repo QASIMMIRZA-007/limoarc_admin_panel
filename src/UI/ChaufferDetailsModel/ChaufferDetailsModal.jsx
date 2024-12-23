@@ -43,7 +43,7 @@ const ChaufferDetailsModal = () => {
     { title: "Documents" },
     { title: "Vehicle " },
     { title: "Booked Rides" },
-    { title: "One Time Payment History" },
+    { title: "Payment History" },
   ]
   const total_earnings_last_year = [
     { month: "Nov 2023", earning: 250000 },

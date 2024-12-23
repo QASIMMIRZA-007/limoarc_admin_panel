@@ -54,14 +54,15 @@ const CustomerDetailsModule = () => {
   const fetchSingleChauffeurData = async () => {
     try {
       setLoading(true)
-      const res = await axios.get(`${BASE_URL}admin/single-chauffeur/${id}`, {
+      const res = await axios.get(`${BASE_URL}admin/single-customer/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
       })
+      console.log("res of customer", res)
       if (res.status === 200) {
-        setData(res.data.Chauffeur)
-        console.log("res", res.data?.Chauffeur)
+        setData(res.data.customer)
+        console.log("res", res.data?.customer)
         setLoading(false)
       }
     } catch (error) {
@@ -76,33 +77,12 @@ const CustomerDetailsModule = () => {
 
   const LimoImages = []
 
-  const remainingFields = {
-    "paymentDetails.Payment_Method": "",
-    "paymentDetails.Payment_Method_email": "",
-    "vehicle_detail.brand_model": "",
-    "vehicle_detail.color": "",
-    "vehicle_detail.manufacture_year": "",
-    "vehicle_detail.number_plate": "",
-    "vehicle_detail.vin": "",
-    "vehicle_detail.vehicle_class": "",
-  }
+
   const handleInputChange = e => {
     console.log("fleds", e.target.value)
   }
   const handleChange = value => {
     console.log(value)
-  }
-  const dummyDoc =
-    "https://images.unsplash.com/photo-1454496406107-dc34337da8d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGFzc3BvcnQlMjBkb2N1bWVudHxlbnwwfHwwfHx8MA%3D%3D"
-  const userInfo = {
-    name: "Irtiza Ali",
-    bookingId: "673635b290b19f43e2a7bc1b",
-    gender: "Male",
-    contactNo: "+1 484 473 1724",
-    email: "example@gmail.com",
-    paymentStatus: "pending",
-    location: "Miami, USA",
-    isActive: true,
   }
 
  
@@ -117,25 +97,22 @@ const CustomerDetailsModule = () => {
     { label: "Email Address", value: data?.email },
     {
       label: "Payment status",
-      value: data?.status,
+      value: data?.paymentStatus,
       isPaymentStatus: true,
     },
     {
       label: "Location",
       value:
-        data?.address?.city +
-        " " +
-        data?.address?.state +
-        " " +
-        data?.address?.country,
-    },
+        [data?.address?.city, data?.address?.state, data?.address?.country]
+          .filter(Boolean) 
+          .join(" ") || "N/A", 
+    }
   ]
   const analyticsData = [
-    { label: "Total Earnings", value: "0" },
-    { label: "Total Income", value: "0" },
-    { label: "Total Complains", value: "0" },
+    { label: "Total Rides", value: "0" },
+    { label: "Total Spend", value: "0" },
+    { label: "Customer Since", value: "0" },
     { label: "Average Rating", value: "0" },
-    { label: "Refunded Amount", value: "0" },
   ]
   const transactionsColums = [
     {
@@ -242,7 +219,8 @@ const CustomerDetailsModule = () => {
 
 
   const userName = data?.
-  first_name + " " + data?.last_name
+  firstName + " " + data?.lastName
+ 
 
   return (
     <section>
@@ -314,7 +292,7 @@ const CustomerDetailsModule = () => {
                     <div className="contentWrapper">
                       {index === 0 && (
                         <div className="stepOneWrapper">
-                          <div className="boxsWrapper">
+                          <div className="boxsWrapper" style={{gridTemplateColumns: "repeat(4, 1fr)"}}>
                             {analyticsData?.map(item => {
                               return (
                                 <div className="boxs">

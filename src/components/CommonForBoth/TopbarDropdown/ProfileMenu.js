@@ -83,6 +83,7 @@ const ProfileMenu = props => {
                 confirmButtonText: "Yes",
                 cancelButtonText: "No",
                 icon: "warning",
+                confirmButtonColor:"red",
               }).then(result => {
                 if (result.isConfirmed) {
                   dispatch(logout())
